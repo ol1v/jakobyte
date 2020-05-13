@@ -24,5 +24,7 @@ a {
 }
 section {
   background-color: #42b983;
+  margin: 2em;
+  width: 10em;
 }
 </style>

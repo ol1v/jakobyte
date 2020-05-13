@@ -2,8 +2,8 @@
   <div id="app">
     <section id="mainsection">
       <div id="nav">
-        <h1 id="jakobyte">JAKOBYTE</h1>
-        <router-link to="/">Home</router-link>|
+        <h1 id="jakobyte">JAKOBYTE.SE</h1>
+        <router-link to="/">Home</router-link>
         <router-link to="/about">About</router-link>
       </div>
 
@@ -18,11 +18,22 @@
         magni quis!
       </h1>
       <div style="display:flex; flex-direction: row;">
-        <Services msg="Hej" description="Här är lite information" />
-        <Services msg="Hej" description="Här är lite information" />
-        <i class="fab fa-android"></i>
+        <Services
+          msg="Web Development"
+          description="In need of a new website? We'll
+        help you build a brand new one. Or expand functionality of your current site."
+        />
+        <Services
+          msg="Android Application Development"
+          description="We'll help you develop native Android applications"
+        />
+        <Services msg="iOS Application Development" description="Här är lite information" />
       </div>
     </section>
+    <p>
+      Hello:
+      <font-awesome-icon icon="coffee" />
+    </p>
   </div>
 </template>
 
@@ -75,6 +86,7 @@ export default {
   font-weight: bold;
   color: #2c3e50;
   font-size: 1.5em;
+  margin: 0.6em;
 }
 
 #nav a.router-link-exact-active {
