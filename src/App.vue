@@ -17,7 +17,7 @@
         possimus omnis magnam facere in ipsa fugiat nulla deleniti ex
         magni quis!
       </h1>
-      <div style="display:flex; flex-direction: row;">
+      <div class="service">
         <Services
           msg="Web Development"
           description="In need of a new website? We'll
@@ -76,6 +76,11 @@ export default {
 
   animation: fadeInDown;
   animation-duration: 2s;
+}
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #nav {
