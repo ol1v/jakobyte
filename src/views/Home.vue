@@ -1,7 +1,7 @@
 <template>
   <div class="home page">
     <div class="animate__animated animate__fadeInLeft">
-      <h1>Welcome to the coolst shit eve4trh:</h1>
+      <h1>Are you in the startup phaze with your company?</h1>
     </div>
   </div>
 </template>

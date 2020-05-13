@@ -1,11 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>
-    </div>
+    <section id="mainsection">
+      <span>
+        <h1 id="jakobyte">JAKOBYTE</h1>
+        <div id="nav">
+          <router-link to="/">Home</router-link>|
+          <router-link to="/about">About</router-link>
+        </div>
+      </span>
 
-    <router-view />
+      <router-view />
+    </section>
+
+    <section>
+      <h2>hej</h2>
+    </section>
   </div>
 </template>
 
@@ -18,6 +27,15 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+#jakobyte {
+  text-align: left;
+}
+#mainsection {
+  background-color: #42b983;
+  position: fixed;
+  width: 100%;
+  height: 70%;
 }
 .page.h1 {
   position: fixed;
@@ -38,6 +56,6 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #bee0d1;
 }
 </style>
