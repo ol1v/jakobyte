@@ -1,17 +1,18 @@
 <template>
-  <div class="info">
+  <div class="service">
     <section>
       <h1>{{ msg }}</h1>
-      <p>This is a journey beyond space and time.</p>
+      <p>{{ description }}</p>
     </section>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Contactform",
+  name: "Services",
   props: {
-    msg: String
+    msg: String,
+    description: String
   }
 };
 </script>
@@ -23,5 +24,7 @@ a {
 }
 section {
   background-color: #42b983;
+  margin: 2em;
+  width: 10em;
 }
 </style>
