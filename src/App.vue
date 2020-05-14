@@ -79,7 +79,6 @@ export default {
 }
 .service {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 

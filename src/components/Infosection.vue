@@ -22,5 +22,6 @@ a {
   color: #42b983;
 }
 section {
+  background-color: #42b983;
 }
 </style>
