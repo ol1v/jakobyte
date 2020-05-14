@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <section id="mainsection">
+    <section class="mainsection">
       <div id="nav">
         <h1 id="jakobyte">JAKOBYTE.SE</h1>
         <router-link to="/">Home</router-link>
@@ -11,12 +11,7 @@
     </section>
 
     <section id="servicesection">
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita saepe veritatis
-        sunt repellat voluptates, tenetur consequatur perspiciatis doloribus
-        possimus omnis magnam facere in ipsa fugiat nulla deleniti ex
-        magni quis!
-      </h1>
+      <h1>What can we offer you?</h1>
       <div class="service">
         <Services
           msg="Web Development"
@@ -30,10 +25,16 @@
         <Services msg="iOS Application Development" description="Här är lite information" />
       </div>
     </section>
-    <p>
-      Hello:
-      <font-awesome-icon icon="coffee" />
-    </p>
+    <section>
+      <p>
+        Hello:
+        <font-awesome-icon icon="coffee" />
+      </p>
+      <h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae magni totam, neque tempora recusandae, quam enim, dolore explicabo nihil veniam eum. Quas commodi ipsa distinctio id minus ratione non deserunt?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam perferendis dolore itaque ut quidem vitae similique ratione nulla dicta, voluptatum modi rem quis explicabo, odit odio cum ipsam earum! Sint.
+      </h1>
+    </section>
   </div>
 </template>
 
@@ -56,16 +57,32 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #0f0e2e;
+  background-color: #000000;
+  margin-bottom: 0em;
+  padding-bottom: 1.5em;
+  background-image: url("https://images.unsplash.com/photo-1505424297051-c3ad50b055ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: auto;
 }
 #jakobyte {
   text-align: left;
 }
-#mainsection {
-  background-color: #42b983;
-  margin-bottom: 4em;
-  padding-bottom: 3em;
+.mainsection {
+  background-color: #ffffff;
+  opacity: 0.8;
+  padding-bottom: 2em;
 }
+#servicesection {
+}
+#servicesection section {
+  color: white;
+  background-color: transparent;
+  opacity: 0.7;
+}
+
 #servicesection.div {
   margin: 4em;
 }
@@ -85,15 +102,18 @@ export default {
 #nav {
   padding: 30px;
 }
+#nav h1 {
+  color: #601c3e;
+}
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #000000;
   font-size: 1.5em;
   margin: 0.6em;
 }
 
 #nav a.router-link-exact-active {
-  color: #bee0d1;
+  color: #2c3e50;
 }
 </style>

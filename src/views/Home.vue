@@ -1,7 +1,7 @@
 <template>
   <div class="home page">
     <div class="animate__animated animate__fadeInLeft">
-      <h1>Are you in the startup phaze with your company?</h1>
+      <h1>Is your company in the startup phaze?</h1>
     </div>
   </div>
 </template>

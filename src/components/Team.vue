@@ -1,18 +1,17 @@
 <template>
-  <div class="service">
-    <section>
-      <h1>{{ msg }}</h1>
-      <p>{{ description }}</p>
-    </section>
+  <div class="Team">
+    <img src alt="soldier" />
+    <p>{{name}}</p>
+    <p>{{email}}</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Services",
+  name: "Team",
   props: {
-    msg: String,
-    description: String
+    name: String,
+    email: String
   }
 };
 </script>

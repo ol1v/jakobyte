@@ -1,9 +1,6 @@
 <template>
   <div class="info">
-    <section>
-      <h1>{{ msg }}</h1>
-      <p>This is a journey beyond space and time.</p>
-    </section>
+    <h1>{{ msg }}</h1>
   </div>
 </template>
 
