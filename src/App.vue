@@ -25,7 +25,7 @@
         <Services msg="iOS Application Development" description="Här är lite information" />
       </div>
     </section>
-    <section>
+    <section id="tech">
       <p>
         Hello:
         <font-awesome-icon icon="coffee" />
@@ -75,16 +75,27 @@ export default {
   opacity: 0.8;
   padding-bottom: 2em;
 }
-#servicesection {
+#servicesection h1 {
+  color: white;
 }
 #servicesection section {
   color: white;
   background-color: transparent;
-  opacity: 0.7;
 }
 
 #servicesection.div {
   margin: 4em;
+}
+#tech {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 55%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  padding-top: 8em;
+  padding-bottom: 4em;
 }
 
 .page.h1 {
