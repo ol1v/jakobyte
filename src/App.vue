@@ -1,5 +1,11 @@
 <template>
   <div id="app">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
     <section class="mainsection">
       <div id="nav">
         <h1 id="jakobyte">JAKOBYTE.SE</h1>
@@ -18,33 +24,47 @@
           description="In need of a new website? We'll
         help you build a brand new one. Or expand functionality of your current site."
         />
+
         <Services
           msg="Android Application Development"
           description="We'll help you develop native Android applications"
         />
         <Services msg="iOS Application Development" description="Här är lite information" />
       </div>
+      <Contactform />
     </section>
     <section id="tech">
       <p>
         Hello:
-        <font-awesome-icon icon="coffee" />
+        <font-awesome-icon icon="vuejs" size="6x" />
+        <font-awesome-icon icon="coffee" size="6x" />
+        <i class="fab fa-js" size="6x"></i>
       </p>
+
+      <p>test:</p>
       <h1>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae magni totam, neque tempora recusandae, quam enim, dolore explicabo nihil veniam eum. Quas commodi ipsa distinctio id minus ratione non deserunt?
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam perferendis dolore itaque ut quidem vitae similique ratione nulla dicta, voluptatum modi rem quis explicabo, odit odio cum ipsam earum! Sint.
+        <i
+          class="fab vuejs-js"
+          size="6x"
+        ></i>
       </h1>
+    </section>
+    <section id="crew">
+      <h1>This is our crew</h1>
     </section>
   </div>
 </template>
 
 <script>
 import Services from "./components/Services.vue";
+import Contactform from "./components/Contactform.vue";
 
 export default {
   name: "app",
   components: {
-    Services
+    Services,
+    Contactform
   }
 };
 </script>
@@ -95,6 +115,12 @@ export default {
     rgba(255, 255, 255, 0) 100%
   );
   padding-top: 8em;
+  padding-bottom: 3em;
+}
+#crew {
+  background-color: #0f0e2e;
+  color: white;
+  padding-top: 0.1em;
   padding-bottom: 4em;
 }
 

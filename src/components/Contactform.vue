@@ -1,9 +1,6 @@
 <template>
   <div class="info">
-    <section>
-      <h1>{{ msg }}</h1>
-      <p>This is a journey beyond space and time.</p>
-    </section>
+    <input type="button" class="btn-grad" value="Clikc" />
   </div>
 </template>
 
@@ -23,5 +20,21 @@ a {
 }
 section {
   background-color: #42b983;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #dc2424 0%,
+    #4a569d 51%,
+    #dc2424 100%
+  );
+  color: white;
+  width: 200px;
+  height: 4em;
+  border-radius: 0.9em;
+}
+.btn-grad:hover {
+  background-position: right center;
 }
 </style>
