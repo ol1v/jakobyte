@@ -1,6 +1,6 @@
 <template>
   <div class="Team">
-    <img src alt="soldier" />
+    <img src alt="image" />
     <p>{{name}}</p>
     <p>{{email}}</p>
   </div>
@@ -11,7 +11,8 @@ export default {
   name: "Team",
   props: {
     name: String,
-    email: String
+    email: String,
+    linkedin: String
   }
 };
 </script>

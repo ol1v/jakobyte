@@ -35,12 +35,18 @@
       <Contactform />
     </section>
     <section id="tech">
-      <p>test:</p>
       <i class="fab fa-js fa-5x"></i>
       <i class="fab fa-vuejs fa-5x"></i>
+      <i class="fab fa-node fa-5x"></i>
+      <i class="fab fa-java fa-5x"></i>
+      <i class="fab fa-android fa-5x"></i>
+      <i class="fab fa-apple fa-5x"></i>
     </section>
     <section id="crew">
       <h1>This is our crew</h1>
+      <Team name="Oliver Lennartsson" email="oleg@jakobyte.se " align="left" />
+      <Team name="Jakob Salomonsson" email="jakob@jakobyte.se " align="right" />
+      <Team name="Henrik Frank" email="frank@jakobyte.se " />
     </section>
   </div>
 </template>
@@ -48,12 +54,14 @@
 <script>
 import Services from "./components/Services.vue";
 import Contactform from "./components/Contactform.vue";
+import Team from "./components/Team.vue";
 
 export default {
   name: "app",
   components: {
     Services,
-    Contactform
+    Contactform,
+    Team
   }
 };
 </script>
@@ -137,6 +145,10 @@ export default {
   color: #000000;
   font-size: 1.5em;
   margin: 0.6em;
+}
+#nav a:hover {
+  animation: fadeInDown;
+  animation-duration: 2s;
 }
 
 #nav a.router-link-exact-active {

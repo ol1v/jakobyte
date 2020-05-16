@@ -42,14 +42,15 @@ section {
   font-weight: 300;
   color: #ffffff;
   text-align: center;
-  transition-duration: 2s;
+  transition-duration: 1s;
 }
 .btn-grad:hover {
   background-image: linear-gradient(
     to right,
-    #da22ff 100%,
+    #da22ff 70%,
     #9733ee 51%,
-    #da22ff 50%
+    #da22ff 0%
   );
+  background-position: right center;
 }
 </style>
