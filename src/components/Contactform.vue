@@ -1,6 +1,6 @@
 <template>
   <div class="info">
-    <input type="button" class="btn-grad" value="Clikc" />
+    <input type="button" class="btn-grad" value="SEND US YOUR IDEA" />
   </div>
 </template>
 
@@ -25,16 +25,31 @@ section {
 .btn-grad {
   background-image: linear-gradient(
     to right,
-    #dc2424 0%,
-    #4a569d 51%,
-    #dc2424 100%
+    #da22ff 0%,
+    #9733ee 51%,
+    #da22ff 100%
   );
-  color: white;
   width: 200px;
   height: 4em;
-  border-radius: 0.9em;
+
+  display: inline-block;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  transition-duration: 2s;
 }
 .btn-grad:hover {
-  background-position: right center;
+  background-image: linear-gradient(
+    to right,
+    #da22ff 100%,
+    #9733ee 51%,
+    #da22ff 50%
+  );
 }
 </style>

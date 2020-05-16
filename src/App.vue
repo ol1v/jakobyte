@@ -11,6 +11,7 @@
         <h1 id="jakobyte">JAKOBYTE.SE</h1>
         <router-link to="/">Home</router-link>
         <router-link to="/about">About</router-link>
+        <a href="#crew">Crew</a>
       </div>
 
       <router-view />
@@ -34,21 +35,9 @@
       <Contactform />
     </section>
     <section id="tech">
-      <p>
-        Hello:
-        <font-awesome-icon icon="vuejs" size="6x" />
-        <font-awesome-icon icon="coffee" size="6x" />
-        <i class="fab fa-js" size="6x"></i>
-      </p>
-
       <p>test:</p>
-      <h1>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae magni totam, neque tempora recusandae, quam enim, dolore explicabo nihil veniam eum. Quas commodi ipsa distinctio id minus ratione non deserunt?
-        <i
-          class="fab vuejs-js"
-          size="6x"
-        ></i>
-      </h1>
+      <i class="fab fa-js fa-5x"></i>
+      <i class="fab fa-vuejs fa-5x"></i>
     </section>
     <section id="crew">
       <h1>This is our crew</h1>
