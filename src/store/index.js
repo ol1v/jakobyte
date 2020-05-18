@@ -5,13 +5,16 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    formbuttonclicked: false
+    formActive: false
   },
   mutations: {
+    formbutton(formActive) {
+      formActive = true
+    }
   },
   actions: {
-    formbutton() {
-      self.formbuttonclicked = true
+    formbutton(context) {
+      context.commit('formbutton')
     }
   },
   modules: {

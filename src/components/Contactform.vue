@@ -1,7 +1,7 @@
 <template>
   <div class="info">
-    <input type="button" class="btn-grad" value="SEND US YOUR IDEA" @click="$store.formbutton" />
-    <p>{{$store.state.formbuttonclicked}}</p>
+    <input type="button" class="btn-grad" value="SEND US YOUR IDEA" @click="this.$store.formbutton" />
+    <p>{{$store.state.formActive}}</p>
   </div>
 </template>
 
