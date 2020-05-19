@@ -1,15 +1,41 @@
 <template>
   <div class="info">
-    <input type="button" class="btn-grad" value="SEND US YOUR IDEA" @click="this.$store.formbutton" />
-    <p>{{$store.state.formActive}}</p>
+    <input
+      type="button"
+      class="btn-grad"
+      value="SEND US YOUR IDEA"
+      @click="activateForm"
+      v-if="!isFormActive"
+    />
+
+    <form action v-if="isFormActive">
+      <input type="text" v-model="placeholderemail" />
+      <input type="textarea" placeholder="In short, what's on your mind?..." />
+      <input type="button" class="btn-grad" value="SEND" />
+    </form>
   </div>
 </template>
 
 <script>
 export default {
   name: "Contactform",
+  data() {
+    return {
+      placeholderemail: 'example@example.com'
+    }
+  },
   props: {
     msg: String
+  },
+  computed: {
+    isFormActive() {
+      return this.$store.getters.formActive;
+    }
+  },
+  methods: {
+    activateForm() {
+      this.$store.dispatch("formbutton");
+    }
   }
 };
 </script>
@@ -22,7 +48,8 @@ a {
 section {
   background-color: #42b983;
 }
-
+form {
+}
 .btn-grad {
   background-image: linear-gradient(
     to right,

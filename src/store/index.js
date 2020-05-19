@@ -7,9 +7,12 @@ export default new Vuex.Store({
   state: {
     formActive: false
   },
+  getters: {
+    formActive: state => state.formActive
+  },
   mutations: {
-    formbutton(formActive) {
-      formActive = true
+    formbutton(state) {
+      state.formActive = true
     }
   },
   actions: {
