@@ -58,6 +58,7 @@ import Team from "./components/Team.vue";
 
 export default {
   name: "app",
+  created() {},
   components: {
     Services,
     Contactform,
